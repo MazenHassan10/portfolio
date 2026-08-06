@@ -19,24 +19,24 @@
   var DIM = 0.25;
 
   var WORK = [
-    { org: 'SCOPES Health', when: 'Current', role: 'Automation & Platform Engineer', facets: ['engineer', 'analyst'],
-      blurb: 'n8n automations for a US healthcare company — turning workflows that took days into minutes, with the data pipelines to prove it.' },
-    { org: 'Gramercy Center', when: 'Current', role: 'Full-Stack Engineer', facets: ['engineer'],
-      blurb: 'Building a T3 Stack / Next.js platform for a US healthcare provider — typed end to end, from Prisma schema to production.' },
-    { org: 'Sputnik', when: 'Current', role: 'Startup Team Lead', facets: ['leader', 'engineer'],
-      blurb: 'Leading a startup team from idea to shipped product — wearing the PM hat and the engineer hat, often in the same standup.' },
-    { org: 'Apple Collaboration Project', when: 'University', role: 'Technical Project Manager', facets: ['leader'],
-      blurb: 'Technical PM on an Apple-collab university project — scoping, roadmapping, and keeping engineers and stakeholders in sync.' },
-    { org: 'Enactus', when: 'Ongoing', role: 'Project Management Head', facets: ['leader'],
-      blurb: 'Running social-impact projects that reach 200+ beneficiaries a year, and training the moderators who keep them running.' },
-    { org: 'Edita Food Industries', when: 'Internship', role: 'Data Analysis Intern', facets: ['analyst'],
-      blurb: 'SQL and Pandas on real FMCG production data — cleaning, joining, and answering questions the floor actually asked.' },
-    { org: 'Creativa Innovation Hubs', when: 'Internship', role: 'Data Analytics Trainee', facets: ['analyst'],
-      blurb: 'Power BI dashboards and analysis practice — from raw exports to visuals a non-analyst can act on.' },
-    { org: 'PES Academy', when: 'Ongoing', role: 'Programming Instructor', facets: ['communicator'],
-      blurb: 'Teaching programming fundamentals — breaking hard ideas into steps beginners can actually climb.' },
-    { org: 'OVD & Techne Summit', when: 'Events', role: 'Public Relations', facets: ['communicator'],
-      blurb: 'PR and media work for tech events — Photoshop, Premiere, and Canva when the message needs visuals, not just words.' }
+    { org: 'SCOPES Health', when: 'Jun 2025 – Present', role: 'Solution Engineer', facets: ['engineer', 'analyst'],
+      blurb: 'Custom T3 Stack platforms and n8n automations for US healthcare operations across SCOPES Health, APMS, and University Surgical Institute — billing, reporting, and workflows that went from days to minutes.' },
+    { org: 'Gramercy Center', when: '2025 – Present', role: 'Solution Engineer', facets: ['engineer'],
+      blurb: 'Software solutions for a US healthcare provider — automation workflows, internal tools, and a WordPress site tuned for performance, content workflows, and user experience.' },
+    { org: 'Sputnik', when: 'Oct 2024 – Present', role: 'Technical Team Lead', facets: ['leader', 'engineer'],
+      blurb: 'Leading development of an e-commerce and learning platform in React.js — owning technical decisions, dev workflows, and delivery with designers and stakeholders.' },
+    { org: 'People of Data × Apple', when: '2024', role: 'Technical Project Manager', facets: ['leader'],
+      blurb: 'Led a data-driven collaboration with Apple California — Agile timelines, international stakeholders, and 10+ moderators trained for consistent delivery.' },
+    { org: 'Enactus Alexandria', when: '2022 – Present', role: 'Project Management Head', facets: ['leader'],
+      blurb: 'Leading student-run entrepreneurial projects that impact 200+ beneficiaries a year.' },
+    { org: 'Edita Food Industries', when: 'Feb – Mar 2025', role: 'IT & Data Analyst Intern', facets: ['analyst'],
+      blurb: 'User access controls, system administration, and internal data analysis that improved supply-chain visibility at an FMCG manufacturer.' },
+    { org: 'Creativa Innovation Hubs', when: 'Oct – Nov 2024', role: 'Data Analysis Intern', facets: ['analyst'],
+      blurb: 'Analyzed student and organizational performance data with statistical and visualization tools — reports that fed real operational improvements.' },
+    { org: 'PES Academy', when: '2024 – Present', role: 'Programming Instructor', facets: ['communicator'],
+      blurb: 'Teaching programming fundamentals, algorithms, HTML, CSS, and JavaScript — breaking hard ideas into steps beginners can actually climb.' },
+    { org: 'OVD & Techne Summit', when: '2023 – Present', role: 'Public Relations', facets: ['communicator'],
+      blurb: 'External communications and stakeholder engagement — plus logistics and VIP protocol for one of the region\'s largest tech conferences.' }
   ];
 
   var JUGGLING = [
@@ -48,10 +48,10 @@
   ];
 
   var TOOLKIT = {
-    engineer: ['TypeScript', 'Next.js / T3 Stack', 'tRPC · Prisma', 'PostgreSQL', 'n8n automation', 'Git / CI'],
-    analyst: ['SQL', 'Python · Pandas', 'Power BI', 'Excel', 'Data cleaning', 'Dashboarding'],
-    leader: ['Roadmapping', 'Agile delivery', 'Stakeholder comms', 'Team building', 'Scoping & estimation'],
-    communicator: ['Teaching & curriculum', 'Public relations', 'Photoshop', 'Premiere', 'Canva', 'Presenting']
+    engineer: ['TypeScript · JavaScript', 'Next.js / T3 Stack', 'tRPC · Tailwind CSS', 'PostgreSQL · Supabase', 'n8n automation', 'Docker · Git / GitHub', 'WordPress'],
+    analyst: ['SQL', 'Python · Pandas · NumPy', 'Power BI', 'Advanced Excel', 'Data cleaning', 'Dashboarding'],
+    leader: ['Roadmapping', 'Agile delivery', 'Stakeholder comms', 'Team building', 'Negotiation', 'Scoping & estimation'],
+    communicator: ['Teaching & curriculum', 'Public speaking', 'Public relations', 'Photoshop', 'Premiere Pro', 'Canva']
   };
 
   /* ----------------------------- helpers -------------------------------- */
