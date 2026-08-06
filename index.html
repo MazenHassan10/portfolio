@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mazen Hassan — Engineer · Analyst · Leader · Communicator</title>
+<meta name="description" content="Mazen Hassan — B.Sc. Computer &amp; Data Science, Alexandria University. One person, four wavelengths: platforms, data, teams, teaching.">
+<meta name="theme-color" content="#F3F5F4">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mazen Hassan — Four-Facet Portfolio">
+<meta property="og:description" content="One person, four wavelengths. I build platforms, read data, run teams, and teach people — usually all in the same week.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%231F5EFF'/></svg>">
+</head>
+<body>
+
+<!-- cursor-reactive light wash -->
+<div class="glow" id="glow" aria-hidden="true"></div>
+<!-- facet sweep overlay -->
+<div class="sweep-layer" id="sweepLayer" aria-hidden="true"></div>
+
+<a class="skip" href="#work">Skip to content</a>
+
+<!-- ============ STICKY TOP BAR ============ -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-dot accent-bg"></span>
+      Mazen Hassan
+    </a>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="top" class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">B.Sc. Computer &amp; Data Science — Alexandria University, Class of 2026</p>
+      <h1 class="hero-title">Mazen<br>Hassan</h1>
+      <p class="hero-lede">One person, four wavelengths. I build platforms, read data, run teams, and teach people — usually all in the same week.</p>
+    </div>
+    <div class="hero-prism">
+      <svg viewBox="0 0 340 200" class="prism" aria-hidden="true">
+        <line x1="0" y1="100" x2="140" y2="100" stroke="#101418" stroke-width="3"></line>
+        <polygon points="140,55 190,145 140,145" fill="none" stroke="#101418" stroke-width="3"></polygon>
+        <g id="beams">
+          <line x1="178" y1="112" x2="340" y2="34"  stroke="#1F5EFF" stroke-width="3" data-beam="engineer"></line>
+          <line x1="182" y1="120" x2="340" y2="86"  stroke="#009B72" stroke-width="3" data-beam="analyst"></line>
+          <line x1="184" y1="128" x2="340" y2="132" stroke="#E8420C" stroke-width="3" data-beam="leader"></line>
+          <line x1="186" y1="136" x2="340" y2="178" stroke="#7B3FE4" stroke-width="3" data-beam="communicator"></line>
+        </g>
+      </svg>
+      <p class="prism-caption">Right now you're seeing the side that<br>
+        <span class="facet-line accent-fg" id="facetLine"></span><span class="caret accent-bg" aria-hidden="true"></span>
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FACET SWITCHER ============ -->
+<div class="switcher" role="tablist" aria-label="Facets">
+  <div class="switcher-inner" id="tabs"></div>
+</div>
+
+<!-- ============ CURRENTLY JUGGLING ============ -->
+<section class="juggling" aria-label="Currently juggling">
+  <div class="juggling-inner">
+    <span class="juggling-label">Currently juggling</span>
+    <div class="juggling-list" id="juggling"></div>
+  </div>
+</section>
+
+<!-- ============ THE WORK ============ -->
+<section id="work" class="section">
+  <span class="ghost ghost-right accent-fg" aria-hidden="true">Work</span>
+  <div class="wrap" data-reveal>
+    <div class="section-head">
+      <h2 class="section-title">The Work</h2>
+      <p class="section-meta accent-fg">Showing: <span id="facetLabel"></span> · matching work rises</p>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<section id="numbers" class="section">
+  <span class="ghost ghost-left accent-fg" aria-hidden="true">Proof</span>
+  <div class="wrap wrap-stats" data-reveal>
+    <div class="stats">
+      <div class="stat"><p class="stat-n">3.82</p><p class="stat-l">CGPA · Alexandria University</p></div>
+      <div class="stat"><p class="stat-n">4th <span>/ 100+</span></p><p class="stat-l">Teams · PepsiCo Hackathon</p></div>
+      <div class="stat"><p class="stat-n">200+</p><p class="stat-l">Beneficiaries / year · Enactus</p></div>
+      <div class="stat"><p class="stat-n">10+</p><p class="stat-l">Moderators trained</p></div>
+      <div class="stat"><p class="stat-n">days → min</p><p class="stat-l">Workflow automation · n8n</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLKIT ============ -->
+<section id="toolkit" class="section">
+  <span class="ghost ghost-right ghost-top accent-fg" aria-hidden="true">Tools</span>
+  <div class="wrap wrap-toolkit" data-reveal>
+    <h2 class="section-title mb">The Toolkit</h2>
+    <div class="toolkit" id="toolkit"></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="education">
+  <div class="wrap edu-grid" data-reveal>
+    <div>
+      <p class="kicker">Education</p>
+      <h3 class="edu-title">B.Sc. Computer &amp; Data Science</h3>
+      <p class="edu-body">Alexandria University. Graduated 2026 with a CGPA of 3.82.</p>
+    </div>
+    <div>
+      <p class="kicker">Training</p>
+      <h3 class="edu-title">DEPI — React.js Track</h3>
+      <p class="edu-body">Digital Egypt Pioneers Initiative, Ministry of Communications &amp; Information Technology.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / CONTACT ============ -->
+<footer id="contact" class="footer">
+  <div class="wrap wrap-footer" data-reveal>
+    <h2 class="footer-title">Whichever side you need — <span class="accent-fg">let's build something.</span></h2>
+
+    <div class="terminal">
+      <div id="termLines"></div>
+      <div class="term-input-row">
+        <span class="accent-fg term-prompt">$</span>
+        <input id="termInput" placeholder="mazen --facet analyst" aria-label="Terminal input" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+
+    <div class="contacts">
+      <a href="mailto:mazen.hassan.eng@gmail.com">mazen.hassan.eng@gmail.com</a>
+      <a href="https://linkedin.com/in/mazen-hassan-662264259" target="_blank" rel="noopener">linkedin.com/in/mazen-hassan-662264259</a>
+      <a href="tel:+201275151155">+20 127 515 1155</a>
+    </div>
+    <p class="colophon">Alexandria, Egypt · One person, four wavelengths</p>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# editors
+.vscode/
+.idea/
+
+# node (only used for the local static server)
+node_modules/
+npm-debug.log*
