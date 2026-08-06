@@ -278,9 +278,13 @@ body {
   height: 4px;
   width: 100%;
   background: transparent;
-  margin-top: 12px;
+  /* auto pushes the bar to the bottom of the (stretched) grid row, so all
+     four bars line up even when "The Communicator" wraps to two lines */
+  margin-top: auto;
+  padding-top: 12px;
   transition: background .35s ease;
   display: block;
+  background-clip: content-box;
 }
 
 /* ---------- currently juggling ---------- */
@@ -475,12 +479,16 @@ body {
 
 .tk-head {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
   padding-bottom: 14px;
   border-bottom: 2px solid;
   margin-bottom: 16px;
+  /* room for a two-line name ("The Communicator") so every column's underline
+     sits at the same height whether its name wraps or not */
+  min-height: 66px;
 }
+.tk-head span.dot { margin-bottom: 5px; }
 .tk-head span.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
 .tk-name {

@@ -168,7 +168,8 @@
   var colEls = {};
 
   function buildToolkit() {
-    var host = $('#toolkit');
+    // #toolkit is the section (nav anchor) — the grid host has its own id
+    var host = $('#toolkitCols');
     KEYS.forEach(function (k) {
       var f = FACETS[k];
       var col = el('div', 'tk-col');
