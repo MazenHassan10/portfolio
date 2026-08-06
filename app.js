@@ -45,6 +45,8 @@
     { name: 'Sputnik', facet: 'leader' }
   ];
 
+  var RESUME_URL = 'https://drive.google.com/file/d/1tfJzdHSoRSKTKQ4o38TYPEbVLUZogpks/view?usp=sharing';
+
   var TOOLKIT = {
     engineer: ['TypeScript · JavaScript', 'Next.js / T3 Stack', 'tRPC · Tailwind CSS', 'PostgreSQL · Supabase', 'n8n automation', 'Docker · Git / GitHub', 'WordPress'],
     analyst: ['SQL', 'Python · Pandas · NumPy', 'Power BI', 'Advanced Excel', 'Data cleaning', 'Dashboarding'],
@@ -291,9 +293,12 @@
     }
 
     if (/^mazen\s+--help$/i.test(v)) {
-      termLines.push({ text: 'usage: mazen --facet [engineer|analyst|leader|communicator]\n       mazen --contact', color: 'rgba(243,245,244,0.6)' });
+      termLines.push({ text: 'usage: mazen --facet [engineer|analyst|leader|communicator]\n       mazen --contact\n       mazen --resume', color: 'rgba(243,245,244,0.6)' });
     } else if (/^mazen\s+--contact$/i.test(v)) {
       termLines.push({ text: 'mazen.hassan.eng@gmail.com · +20 127 515 1155', color: 'rgba(243,245,244,0.85)' });
+    } else if (/^mazen\s+--resume$/i.test(v)) {
+      termLines.push({ text: 'opening resume → drive.google.com', color: 'rgba(243,245,244,0.85)' });
+      window.open(RESUME_URL, '_blank', 'noopener');
     } else {
       termLines.push({ text: "command not found: '" + v + "' — try mazen --help", color: 'rgba(243,245,244,0.5)' });
     }
