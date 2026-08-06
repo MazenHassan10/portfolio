@@ -192,13 +192,24 @@ body {
   color: rgba(16, 20, 24, .65);
 }
 
-.facet-line {
+/* All ghosts + the live line share one grid cell, so the slot reserves the
+   height of the tallest facet line. Without this the caption grows a line
+   mid-typing and the bottom-aligned prism jumps upward. */
+.facet-slot { display: grid; }
+.facet-slot > * { grid-area: 1 / 1; }
+.facet-ghost { visibility: hidden; }
+
+.facet-line,
+.facet-ghost {
   font-family: var(--display);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -.01em;
   font-size: 24px;
 }
+
+/* room for the caret so it can never be the only thing on a new line */
+.facet-ghost { padding-right: 18px; }
 
 .caret {
   display: inline-block;

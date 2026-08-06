@@ -63,7 +63,12 @@
         </g>
       </svg>
       <p class="prism-caption">Right now you're seeing the side that<br>
-        <span class="facet-line accent-fg" id="facetLine"></span><span class="caret accent-bg" aria-hidden="true"></span>
+        <!-- Hidden ghost copies of every facet line are injected here by app.js.
+             They stack in the same grid cell, so the slot is always as tall as
+             the tallest line and the prism never shifts while text types in. -->
+        <span class="facet-slot" id="facetSlot">
+          <span class="facet-live"><span class="facet-line accent-fg" id="facetLine"></span><span class="caret accent-bg" aria-hidden="true"></span></span>
+        </span>
       </p>
     </div>
   </div>

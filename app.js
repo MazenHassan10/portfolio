@@ -113,6 +113,18 @@
     });
   }
 
+  // Reserve the tallest facet line's height so typing never resizes the caption
+  // (a bottom-aligned prism would otherwise jump up when the line wraps).
+  function buildFacetGhosts() {
+    var slot = $('#facetSlot');
+    var live = slot.firstElementChild;
+    KEYS.forEach(function (k) {
+      var g = el('span', 'facet-ghost', FACETS[k].line);
+      g.setAttribute('aria-hidden', 'true');
+      slot.insertBefore(g, live);
+    });
+  }
+
   function buildJuggling() {
     var host = $('#juggling');
     JUGGLING.forEach(function (g) {
@@ -337,6 +349,7 @@
   /* -------------------------------- init ---------------------------------- */
 
   buildTabs();
+  buildFacetGhosts();
   buildJuggling();
   buildCards();
   buildToolkit();
