@@ -27,14 +27,14 @@
       blurb: 'Leading development of an e-commerce and learning platform in React.js — owning technical decisions, dev workflows, and delivery with designers and stakeholders.' },
     { org: 'People of Data × Apple', when: '2024', role: 'Technical Project Manager', facets: ['leader'],
       blurb: 'Led a data-driven collaboration with Apple California — Agile timelines, international stakeholders, and 10+ moderators trained for consistent delivery.' },
-    { org: 'Enactus Alexandria', when: '2022 – Present', role: 'Project Management Head', facets: ['leader'],
-      blurb: 'Leading student-run entrepreneurial projects that impact 200+ beneficiaries a year.' },
+    { org: 'Enactus Alexandria', when: '2022 – 2023', role: 'Project Management Head', facets: ['leader'],
+      blurb: 'Led student-run entrepreneurial projects that impacted 200+ beneficiaries a year.' },
     { org: 'Edita Food Industries', when: 'Feb – Mar 2025', role: 'IT & Data Analyst Intern', facets: ['analyst'],
       blurb: 'User access controls, system administration, and internal data analysis that improved supply-chain visibility at an FMCG manufacturer.' },
     { org: 'Creativa Innovation Hubs', when: 'Oct – Nov 2024', role: 'Data Analysis Intern', facets: ['analyst'],
       blurb: 'Analyzed student and organizational performance data with statistical and visualization tools — reports that fed real operational improvements.' },
-    { org: 'PES Academy', when: '2024 – Present', role: 'Programming Instructor', facets: ['communicator'],
-      blurb: 'Teaching programming fundamentals, algorithms, HTML, CSS, and JavaScript — breaking hard ideas into steps beginners can actually climb.' },
+    { org: 'PES Academy', when: '2024 – 2025', role: 'Programming Instructor', facets: ['communicator'],
+      blurb: 'Taught programming fundamentals, algorithms, HTML, CSS, and JavaScript — breaking hard ideas into steps beginners can actually climb.' },
     { org: 'OVD & Techne Summit', when: '2023 – Present', role: 'Public Relations', facets: ['communicator'],
       blurb: 'External communications and stakeholder engagement — plus logistics and VIP protocol for one of the region\'s largest tech conferences.' }
   ];
@@ -42,9 +42,7 @@
   var JUGGLING = [
     { name: 'SCOPES Health', facet: 'engineer' },
     { name: 'Gramercy Center', facet: 'engineer' },
-    { name: 'Sputnik', facet: 'leader' },
-    { name: 'PES Academy', facet: 'communicator' },
-    { name: 'Enactus', facet: 'leader' }
+    { name: 'Sputnik', facet: 'leader' }
   ];
 
   var TOOLKIT = {
