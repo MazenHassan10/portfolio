@@ -19,33 +19,32 @@
   var DIM = 0.25;
 
   var WORK = [
-    { org: 'SCOPES Health', when: 'Jun 2025 – Present', role: 'Solution Engineer', facets: ['engineer', 'analyst'],
+    { org: 'SCOPES Health', when: 'Sep 2025 – Present', role: 'Solution Engineer', facets: ['engineer', 'analyst'],
       blurb: 'Custom T3 Stack platforms and n8n automations for US healthcare operations across SCOPES Health, APMS, and University Surgical Institute — billing, reporting, and workflows that went from days to minutes.' },
-    { org: 'Gramercy Center', when: '2025 – Present', role: 'Solution Engineer', facets: ['engineer'],
+    { org: 'Gramercy Center', when: 'Sep 2025 – Present', role: 'Solution Engineer', facets: ['engineer'],
       blurb: 'Software solutions for a US healthcare provider — automation workflows, internal tools, and a WordPress site tuned for performance, content workflows, and user experience.' },
-    { org: 'Sputnik', when: 'Oct 2024 – Present', role: 'Technical Team Lead', facets: ['leader', 'engineer'],
-      blurb: 'Leading development of an e-commerce and learning platform in React.js — owning technical decisions, dev workflows, and delivery with designers and stakeholders.' },
+    { org: 'Sputnik', when: 'Oct 2024 – Oct 2025', role: 'Technical Team Lead', facets: ['leader', 'engineer'],
+      blurb: 'Led development of an e-commerce and learning platform in React.js — owning technical decisions, dev workflows, and delivery with designers and stakeholders.' },
     { org: 'People of Data × Apple', when: '2024', role: 'Technical Project Manager', facets: ['leader'],
       blurb: 'Led a data-driven collaboration with Apple California — Agile timelines, international stakeholders, and 10+ moderators trained for consistent delivery.' },
     { org: 'Enactus Alexandria', when: '2022 – 2023', role: 'Project Management Head', facets: ['leader'],
       blurb: 'Led student-run entrepreneurial projects that impacted 200+ beneficiaries a year.' },
     { org: 'Edita Food Industries', when: 'Feb – Mar 2025', role: 'IT & Data Analyst Intern', facets: ['analyst'],
       blurb: 'User access controls, system administration, and internal data analysis that improved supply-chain visibility at an FMCG manufacturer.' },
-    { org: 'Creativa Innovation Hubs', when: 'Oct – Nov 2024', role: 'Data Analysis Intern', facets: ['analyst'],
+    { org: 'Creativa Innovation Hubs', when: 'Oct 2024 – Jan 2025', role: 'Data Analysis Intern', facets: ['analyst'],
       blurb: 'Analyzed student and organizational performance data with statistical and visualization tools — reports that fed real operational improvements.' },
-    { org: 'PES Academy', when: '2024 – 2025', role: 'Programming Instructor', facets: ['communicator'],
+    { org: 'PES Academy', when: 'Sep 2023 – Sep 2024', role: 'Programming Instructor', facets: ['communicator'],
       blurb: 'Taught programming fundamentals, algorithms, HTML, CSS, and JavaScript — breaking hard ideas into steps beginners can actually climb.' },
-    { org: 'OVD & Techne Summit', when: '2023 – Present', role: 'Public Relations', facets: ['communicator'],
-      blurb: 'External communications and stakeholder engagement — plus logistics and VIP protocol for one of the region\'s largest tech conferences.' }
+    { org: 'OVD & Techne Summit', when: '2023 – 2025', role: 'PR Member → Team Leader', facets: ['communicator'],
+      blurb: 'External communications at OVD, then led the PR team for Techne Summit — coordinating communications and stakeholder engagement for one of the region\'s largest tech conferences.' }
   ];
 
   var JUGGLING = [
     { name: 'SCOPES Health', facet: 'engineer' },
-    { name: 'Gramercy Center', facet: 'engineer' },
-    { name: 'Sputnik', facet: 'leader' }
+    { name: 'Gramercy Center', facet: 'engineer' }
   ];
 
-  var RESUME_URL = 'https://drive.google.com/file/d/1tfJzdHSoRSKTKQ4o38TYPEbVLUZogpks/view?usp=sharing';
+  var RESUME_URL = './resume.pdf';
 
   var TOOLKIT = {
     engineer: ['TypeScript · JavaScript', 'Next.js / T3 Stack', 'tRPC · Tailwind CSS', 'PostgreSQL · Supabase', 'n8n automation', 'Docker · Git / GitHub', 'WordPress'],
@@ -297,7 +296,7 @@
     } else if (/^mazen\s+--contact$/i.test(v)) {
       termLines.push({ text: 'mazen.hassan.eng@gmail.com · +20 127 515 1155', color: 'rgba(243,245,244,0.85)' });
     } else if (/^mazen\s+--resume$/i.test(v)) {
-      termLines.push({ text: 'opening resume → drive.google.com', color: 'rgba(243,245,244,0.85)' });
+      termLines.push({ text: 'opening resume.pdf', color: 'rgba(243,245,244,0.85)' });
       window.open(RESUME_URL, '_blank', 'noopener');
     } else {
       termLines.push({ text: "command not found: '" + v + "' — try mazen --help", color: 'rgba(243,245,244,0.5)' });
