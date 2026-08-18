@@ -113,7 +113,7 @@ body {
   gap: 10px;
 }
 
-.brand-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.brand-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
 
 .navlinks { display: flex; gap: 26px; flex-wrap: wrap; }
 
@@ -286,7 +286,7 @@ body {
 .tab[aria-selected="true"] { opacity: 1; }
 
 .tab-head { display: flex; align-items: center; gap: 10px; }
-.tab-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.tab-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex: none; }
 
 .tab-name {
   font-family: var(--display);
@@ -519,7 +519,7 @@ body {
   min-height: 66px;
 }
 .tk-head span.dot { margin-bottom: 5px; }
-.tk-head span.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.tk-head span.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
 
 .tk-name {
   font-family: var(--display);
